@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres CEPAS Centro Cultural</title>
+    <!-- Iconos de FontAwesome para el logo de WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #1a4d4a; /* Tono verde azulado del folleto */
+            --accent-yellow: #f4d03f; /* Amarillo de los días */
+            --card-bg: rgba(255, 255, 255, 0.1);
+            --text-white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: var(--text-white);
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px; /* Tamaño ideal para pantalla de celular */
+        }
+
+        .day-section {
+            margin-bottom: 25px;
+        }
+
+        .day-title {
+            color: var(--accent-yellow);
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--accent-yellow);
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .taller-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.2s;
+        }
+
+        .taller-card:active {
+            transform: scale(0.98); /* Efecto visual al tocar en el celular */
+        }
+
+        .taller-info {
+            flex-grow: 1;
+            padding-right: 10px;
+        }
+
+        .taller-hora {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            font-weight: bold;
+        }
+
+        .taller-nombre {
+            font-size: 1.15rem;
+            font-weight: bold;
+            margin: 3px 0;
+            text-transform: uppercase;
+        }
+
+        .taller-sub {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .taller-docente {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-top: 4px;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            flex-shrink: 0;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            opacity: 0.9;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CEPAS</h1>
+        <p>Centro Cultural — Talleres '26</p>
+    </header>
+
+    <div class="container">
+
+        <!-- LUNES -->
+        <div class="day-section">
+            <div class="day-title">Lunes</div>
+            
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">18:00 hs.</div>
+                    <div class="taller-nombre">Cerámica</div>
+                    <div class="taller-sub">De Raíz Americana</div>
+                    <div class="taller-docente">Docentes: Cez y Guada</div>
+                </div>
+                <!-- IMPORTANTE: Reemplazá el 5491100000000 por tu número real de WhatsApp con código de área -->
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Cerámica%20de%20Raíz%20Americana%20de%20los%20Lunes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">19:00 hs.</div>
+                    <div class="taller-nombre">Zumba</div>
+                    <div class="taller-docente">Docente: Gaby</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Zumba%20de%20los%20Lunes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">20:00 hs.</div>
+                    <div class="taller-nombre">Folklore</div>
+                    <div class="taller-docente">Docente: Giselle</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Folklore%20de%20los%20Lunes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MARTES -->
+        <div class="day-section">
+            <div class="day-title">Martes</div>
+            
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">17:00 hs.</div>
+                    <div class="taller-nombre">Dibujo y Pintura</div>
+                    <div class="taller-sub">Para Infancias</div>
+                    <div class="taller-docente">Docente: Nico</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Dibujo%20y%20Pintura%20para%20Infancias%20de%20los%20Martes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">18:30 hs.</div>
+                    <div class="taller-nombre">Yoga</div>
+                    <div class="taller-docente">Docente: Guada</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Yoga%20de%20los%20Martes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">19:00 hs.</div>
+                    <div class="taller-nombre">Cerámica</div>
+                    <div class="taller-sub">Tradicional</div>
+                    <div class="taller-docente">Docente: Isa</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Cerámica%20Tradicional%20de%20los%20Martes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MIÉRCOLES -->
+        <div class="day-section">
+            <div class="day-title">Miércoles</div>
+            
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">19:00 hs.</div>
+                    <div class="taller-nombre">Zumba</div>
+                    <div class="taller-docente">Docente: Gaby</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Zumba%20de%20los%20Miércoles." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- JUEVES -->
+        <div class="day-section">
+            <div class="day-title">Jueves</div>
+            
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">18:30 hs.</div>
+                    <div class="taller-nombre">Escritura</div>
+                    <div class="taller-sub">Espontánea Grillo</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Escritura%20Espontánea%20de%20los%20Jueves." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">19:00 hs.</div>
+                    <div class="taller-nombre">Danzas Afro</div>
+                    <div class="taller-docente">Docente: Sabri</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Danzas%20Afro%20de%20los%20Jueves." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- VIERNES -->
+        <div class="day-section">
+            <div class="day-title">Viernes</div>
+            
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">17:00 hs.</div>
+                    <div class="taller-nombre">Dibujo y Pintura</div>
+                    <div class="taller-sub">Para Infancias</div>
+                    <div class="taller-docente">Docente: Nico</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Dibujo%20y%20Pintura%20para%20Infancias%20de%20los%20Viernes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">19:00 a 20:00 hs.</div>
+                    <div class="taller-nombre">Inglés</div>
+                    <div class="taller-sub">Adults</div>
+                    <div class="taller-docente">Docente: Guada</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Inglés%20Adultos%20de%20los%20Viernes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">20:00 a 21:00 hs.</div>
+                    <div class="taller-nombre">Yoga en Silla</div>
+                    <div class="taller-docente">Docente: Guada</div>
+                </div>
+                <a href="https://wa.me/5491100000000?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Yoga%20en%20Silla%20de%20los%20Viernes." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- SÁBADO -->
+        <div class="day-section">
+            <div class="day-title">Sábado</div>
+            
+            <div class="taller-card">
+                <div class="taller-info">
+                    <div class="taller-hora">11:30 hs.</div>
+                    <div class="taller-nombre">Cerámica</div>
+                    <div class="taller-sub">Tradicional - Infancias y Familias</div>
+                    <div class="taller-docente">Docente: Isa</div>
+                </div>
+                <a href="https://wa.me/5491173630775?text=Hola%20CEPAS!%20Quiero%20más%20información%20sobre%20el%20taller%20de%20Cerámica%20Infancias/Familias%20de%20los%20Sábados." target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>cepas centro cultural</p>
+    </footer>
+
+</body>
+</html>
